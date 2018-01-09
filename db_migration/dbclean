@@ -1,0 +1,1 @@
+flyway -configFile=flyway.conf -locations=filesystem:. clean
