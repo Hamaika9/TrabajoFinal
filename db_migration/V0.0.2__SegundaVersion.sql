@@ -28,6 +28,17 @@ INSERT INTO `SONY`.`Producto` (`idProducto`, `precio`, `marca`, `idMarca`, `idCa
 INSERT INTO `SONY`.`Producto` (`idProducto`, `precio`, `marca`, `idMarca`, `idCategoria`, `nombreProducto`) VALUES ('12', '40.430', 'PANASONIC', '2', '1', 'Television FULL Vision');
 INSERT INTO `SONY`.`Producto` (`idProducto`, `precio`, `marca`, `idMarca`, `idCategoria`, `nombreProducto`) VALUES ('13', '165.788', 'SONY', '1', '1', 'Television 4K 99 Pulgadas');
 
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('1', 'Juan Funez', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('2', 'Claudia Lenz', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('3', 'Nicolas Peres', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('4', 'Sofia Oliva', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('5', 'Francisco Cacho', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('6', 'Bin Laden', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('7', 'Amelia Rojas', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('8', 'Jhon Week', '5');
+INSERT INTO `SONY`.`Vendedor` (`idVendedores`, `vendedor`, `comision`) VALUES ('9', 'Morena Dangelis', '5');
+
+
 
 
 
