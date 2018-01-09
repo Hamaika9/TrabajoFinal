@@ -24,7 +24,7 @@ public class Conection {
 		System.out.printf("%s, %s%n", metadata.getDatabaseProductName(), metadata.getDatabaseProductVersion());
 
 		Statement consulta = c.createStatement();
-		ResultSet rs = consulta.executeQuery("SELECT * FROM productos");
+		ResultSet rs = consulta.executeQuery("SELECT * FROM producto");
 
 		while (rs.next()) {
 			System.out.printf("%s - %s - %s%n", rs.getInt("idProducto"), rs.getString("producto"),
