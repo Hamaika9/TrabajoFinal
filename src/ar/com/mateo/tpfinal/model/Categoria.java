@@ -2,21 +2,21 @@ package ar.com.mateo.tpfinal.model;
 
 public class Categoria {
 
-	private int idCategoria;
+	private int idcategoria;
 	private String categoria;
 
 	public int getIdCategoria() {
-		return idCategoria
+		return idcategoria
 				;
 	}
 
-	public void setIdCategoria(int idCategoria) {
-		this.idCategoria = idCategoria;
+	public void setIdCategoria(int idcategoria) {
+		this.idcategoria = idcategoria;
 	}
 
-	public Categoria(int idCategoria, String categoria) {
+	public Categoria(int idcategoria, String categoria) {
 		super();
-		this.idCategoria = idCategoria;
+		this.idcategoria = idcategoria;
 		this.categoria = categoria;
 	}
 
@@ -39,5 +39,7 @@ public class Categoria {
 		return getCategoria();
 		//return String.format("Rubro: %s - %s", getIdRubro(), getRubro());
 	}
+
+	
 }
 

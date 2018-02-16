@@ -1,14 +1,14 @@
 package ar.com.mateo.tpfinal.model;
 
 public class Proveedor {
-	public Proveedor(int idProveedor, String proveedor) {
+	public Proveedor(int idProveedor, String Proveedor) {
 		super();
 		this.idProveedor = idProveedor;
-		this.proveedor = proveedor;
+		this.Proveedor = Proveedor;
 	}
 
 	private int idProveedor;
-	private String proveedor;
+	private String Proveedor;
 
 	public int getIdProveedor() {
 		return idProveedor;
@@ -19,11 +19,11 @@ public class Proveedor {
 	}
 
 	public String getProveedor() {
-		return proveedor;
+		return Proveedor;
 	}
 
-	public void setProveedor(String proveedor) {
-		this.proveedor = proveedor;
+	public void setProveedores(String Proveedor) {
+		this.Proveedor = Proveedor;
 	}
 
 	public Proveedor() {

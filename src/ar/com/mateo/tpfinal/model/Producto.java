@@ -1,9 +1,15 @@
 package ar.com.mateo.tpfinal.model;
 
+
+import java.util.List;
+
+
+
 public class Producto {
 
 	private int idProducto;
-	private String producto;
+	private String Producto;
+	private Marca Marca;
 	public int getIdProducto() {
 		return idProducto;
 	}
@@ -11,45 +17,67 @@ public class Producto {
 		this.idProducto = idProducto;
 	}
 	public String getProducto() {
-		return producto;
+		return Producto;
 	}
 	public Producto() {
 	}
-	public Producto(int idProducto, String producto, double precio, Categoria categoria, Proveedor proveedor) {
+	public Producto(int idProducto, String Producto, double precio, Categoria categoria,Marca marca) {
 		super();
 		this.idProducto = idProducto;
-		this.producto = producto;
+		this.Producto = Producto;
 		this.precio = precio;
 		this.categoria = categoria;
-		this.proveedor = proveedor;
+		this.Marca=marca;
+		
 	}
-	public void setProducto(String producto) {
-		this.producto = producto;
+	public void setProducto(String Producto) {
+		this.Producto = Producto;
 	}
 	public double getPrecio() {
 		return precio;
 	}
-	public void setPrecio(double precio) {
-		this.precio = precio;
+	public void setPrecio(double Precio) {
+		this.precio = Precio;
 	}
+	
+	
 	public Categoria getCategoria() {
 		return categoria;
 	}
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-	public Proveedor getProveedor() {
-		return proveedor;
-	}
-	public void setProveedor(Proveedor proveedor) {
-		this.proveedor = proveedor;
-	}
+	
+
 	private double precio;
 	private Categoria categoria;
-	private Proveedor proveedor;
+	
+	
+	
+	public List<Proveedor> getProveedores() {
+		return proveedores;
+	}
+	public void setProveedores(List<Proveedor> proveedores) {
+		this.proveedores = proveedores;
+	}
+
+
+	private List<Proveedor> proveedores;
+	
+	
+			
+	
+	
+	
+	public Marca getMarca() {
+		return Marca;
+	}
+	public void setMarca(Marca marca) {
+		Marca = marca;
+	}
 	@Override
 	public String toString() {
-		return String.format("Producto: %s - %s precio=%s [%s] [%s]", getIdProducto(), getProducto(), getPrecio(), getCategoria(), getProveedor());
+		return String.format("Producto: %s - %s precio=%s [%s] [%s] [%s]", getIdProducto(), getProducto(), getPrecio(), getCategoria(), getProveedores(),getMarca());
 	}
 }
 
